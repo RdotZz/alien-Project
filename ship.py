@@ -21,8 +21,7 @@ class Ship:
         #标志移动
         self.moving_right = False
         self.moving_left = False
-        # self.moving_up = False
-        # self.moving_down = False
+       
     
     def update(self):
         """根据移动标志调整飞船的位置"""
@@ -30,10 +29,7 @@ class Ship:
             self.x += self.settings.ship_speed
         if self.moving_left and self.rect.left > 0:
             self.x -= self.settings.ship_speed
-        # if self.moving_up:
-        #     self.rect.y += 1
-        # if self.moving_down:
-        #     self.rect.y -= 1
+        
 
         
         self.rect.x = self.x
