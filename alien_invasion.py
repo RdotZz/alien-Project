@@ -131,7 +131,7 @@ class AlienInvasion:
     def _check_events(self):
         """响应按键和鼠标事件"""
         for event in pygame.event.get():
-            if event.type == pygame.QUIT:
+            if event.type == pygame.QUIT:  
                 sys.exit()
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 mouse_pos = pygame.mouse.get_pos()
